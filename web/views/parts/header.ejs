@@ -1,0 +1,36 @@
+<header class="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Odd Pinger
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/discord" class="nav__link">Discord</a>
+                        </li>
+                      
+                        <li class="nav__item">
+                                                <% if(user) { %>
+                            <a href="/dashboard" class="nav__link">Dashboard</a>
+                                                  <% } else { %>
+                            <a href="/login" class="nav__link">Login</a>
+                                                    <% } %>
+
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
